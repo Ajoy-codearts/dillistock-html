@@ -1,0 +1,204 @@
+.subscription_back{
+    width: 100%;
+    .portion{
+        width: 100%; 
+        margin-bottom: 7rem;
+        .head{
+            width: 100%; height: 6.1rem;
+            background-color: #291402;
+            color: #fff;
+            font-size: 2.3rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .body{
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 3rem 3rem 5rem 3rem;
+            h4{
+                color: #291402;
+                font-size: 16px;
+                margin: 0;
+                text-align: center;
+            }
+            .tag{
+                background-color: #cacdd2;
+                border-radius: 4rem;
+                padding: 1rem 2rem;
+                font-size: 12px;
+                color: #291402;
+                font-weight: 500;
+                margin: 2rem 0 3rem;
+            }
+            .price{
+                height: 5rem; color: #291402;
+                margin-bottom: 3rem;
+                .dollar{
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    margin-right: 2.4rem;
+                }
+                .main_price{
+                    font-size: 7.7rem;
+                    margin-right: 11px;
+                }
+                .price_month{
+                    font-size: 13px;
+                }
+            }
+            p{
+                color: #291402; font-size: 14px;   text-align: center;
+            }
+            .custom_button{
+                margin-top: 3rem;
+                a{
+                    width: 15.1rem;
+                    height: 5.2rem;
+                    line-height: 5.2rem;
+                }
+            }
+        }
+    }
+}
+
+.count_down_section{
+    width: 100%;
+    padding: 12rem 0;
+    background-image: url(../images/count_down.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    h2{
+        color: #fff;
+        font-size: 5.3rem;
+        font-weight: 300;
+    }
+    .timer{
+        width: 100%;
+        .count{
+            width: 15.6rem;
+            height: 15.6rem;
+            background-color: #fff;
+            border-radius: 100%;
+            color: #291402;
+            font-size: 5.3rem;
+            line-height: 4.5rem;
+            margin: 0 2.2rem;
+            margin-top: 6.8rem;
+            padding-top: 2rem;
+            span{
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .count_down_section{
+        h2{
+            font-size: 4.3rem;
+        }
+        .timer{
+            .count{
+                width: 10rem;
+                height: 10rem;
+                font-size: 4rem;
+                line-height: 3.5rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+.pricing_back{
+    width: 100%;
+    padding-top: 7rem;
+    .details{
+        width: 100%;
+        padding: 0 15rem;
+        .col-lg-4{
+            &:first-child{
+                .portion{
+                    &::before{
+                        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 75%);
+                    }
+                }
+                
+            }
+            &:nth-child(2){
+                .portion{
+                    &::before{
+                        background-color: #291402;
+                        clip-path: polygon(100% 0, 100% 50%, 70% 50%, 50% 70%, 30% 50%, 0 50%, 0 0);
+                    }
+                    .icon_back{
+                        border-color:#291402 ;
+                    }
+                }
+                
+            }
+            &:last-child{
+                .portion{
+                    &::before{
+                        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 50%);
+                    }
+                }
+                
+            }
+           
+        }
+    }
+    .portion{
+        width: 100%;
+        height: 36.7rem;
+        box-shadow: rgba(0,0,0,.35) 0 0 12px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 7rem;
+        .price{
+            color: #fff;
+            font-size: 4.5rem;
+            font-weight: 900;
+        }
+
+        p{
+            color: #fff; font-size: 16px; text-align: center; padding: 0 15px;
+        }
+        .icon_back{
+            width: 10.1rem;
+            height: 10.1rem;
+            background-color: #fff;
+            border-radius: 100%;
+            border: #7f6657 4px solid;
+            margin-top: 1rem;
+        }
+        h2{
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            margin: 2.9rem 0 0 0;
+        }
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color:#7f6657;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: -1;
+            
+        }
+        
+    }
+}
+
+@media only screen and (max-width:500px){
+    .pricing_back{
+        .details{
+            padding: 0;
+        }
+    }
+}
+

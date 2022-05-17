@@ -1,0 +1,120 @@
+header{
+    width: 100%; height: 10rem; float: left;     background-color: rgba(255,255,255,.73); padding: 0; position: fixed; top: 0; left: 0; display: flex; align-items: center;     backdrop-filter: saturate(180%) blur(24px); z-index: 7;     box-shadow: rgba(0,0,0,.2) 1px 0 10px;
+    .container{
+        position: relative;
+    }
+    .logo{
+        position: absolute; top: 0; left: 0; bottom: 0;  margin: auto; display: block; height: 6.7rem;
+        img{
+            height: 100% !important;
+        }
+    } 
+    .right_details{
+        float: right;
+        .menu{
+            float: left; padding-top: 1.3rem;
+            li{
+                float: left; margin-right: 2.7rem; padding-right: 3.1rem; position: relative; z-index: 2;
+                &::after{
+                    width: .6rem; height: .6rem; background-color: #a1a1a1;  position: absolute; top: 0; right: 0; bottom: 0; margin: auto; content: ""; border-radius: 1rem;
+                }
+                &:last-child{
+                    margin-right: 0; padding-right: 0;
+                    &::after{
+                        display: none;
+                    }
+                }                
+                a{
+                    color: #000; font-weight: 700; text-transform: uppercase; transition: color .5s ease-in; font-size: 1.6rem; 
+                }
+                &:hover{
+                    a{
+                        color: #7f6657;
+                    } 
+                    ul{
+                        top: 100%; opacity: 1; visibility: visible;
+                        li{
+                            a{
+                                color: #fff;
+                            }
+                        }
+                    }                 
+                    
+                }
+                ul{
+                    position: absolute; top: calc(100% + 2rem); left: 0; background-color: #291402; width: 30rem; opacity: 0; visibility: hidden; transition: all .5s ease-in;
+                    li{
+                        margin: 0; width: 100%; padding: 0;
+                        a{
+                            margin: 0; width: 100%; padding: 1rem 1.5rem; color: #fff;  border-bottom: #846c5d .1rem solid; float: left;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+        .right_widget{
+            float: left; margin-left: calc(7.2rem - 2.5rem);
+            .details{
+               float: left;
+               li{
+                   float: left;
+                   a{
+                       padding: 0 2.5rem; height: 4.6rem; line-height: 4.9rem; border-radius: .5rem; color: #000; font-weight: 700; text-transform: uppercase; transition: color .5s ease-in; 
+                       text-align: center; float: left; position: relative; font-size: 1.6rem; 
+                       
+                       img{
+                           display: inline-block; margin-right: 1.1rem; position: relative; top: -2px;
+                       } 
+                       
+                   }
+                   &:last-child{
+                        a{
+                            background-color: #291402; color: #fff;
+                        }                    
+                    } 
+                    &:first-child{
+                        a{
+                            &::after{
+                                width: .1rem; height: 2.1rem; background-color: #cccccc; position: absolute; top: 0; bottom: 0; margin: auto; right: 0; content: "";
+                            }
+                        }
+                    }  
+               } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){
+    header{
+        .logo{
+            left: 3rem;
+        }
+        .right_details{
+            .right_widget{
+                margin-left: 0; padding-right: 7.8rem;
+            }            
+            .menu{ display: none;}
+        }
+    }  
+}
+
+@media only screen and (max-width:650px){
+    
+    header{
+        padding: 0;
+        
+        .right_details{
+            .right_widget{
+                display: none;
+            }
+        }
+    }
+   
+
+}

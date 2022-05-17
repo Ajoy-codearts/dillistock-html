@@ -1,0 +1,25 @@
+.join_us_back{
+    width: 100%; float: left; color: #fff; background-color: #000; padding: 1.2rem 0; text-align: center;
+    .container{
+        display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+    }
+    p{
+        font-size: 2.3rem; margin: 0; padding: 0;
+    }
+    .custom_button{
+        float: right;
+        a{
+            background-color: #fff; color: #000;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .join_us_back{
+        padding: 2rem 0;
+        .container{
+            justify-content: center;
+        }
+        p{margin-bottom: 15px; font-size: 1.7rem;}
+    }
+}

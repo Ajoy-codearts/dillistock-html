@@ -1,0 +1,152 @@
+.blog_left_details{
+    width: 100%; float: left;
+    .content_back{
+        width: 100%; float: left;
+    }
+    .avator_part{
+        width: 100%; float: left;
+        img{
+            width: 100%; display: block;
+        }
+        .widget_area{
+            width: 100%; float: left; padding-top: 6rem; margin-bottom: 5rem;
+            .widget{
+                width: 100%; float: left; 
+                li{
+                    color: #717171; float: left; font-size: 2.4rem; margin-right: 3.5rem; padding-left: 2rem; position: relative;
+                    &::before{
+                        width: 1rem; height: 1rem; background-color: #0088cc; border-radius: 2rem; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; content: "";
+                    }
+                    &:first-child{
+                        padding-left: 5rem;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    img{
+                        position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 4.1rem; height: 4.1rem;
+                    }
+                }
+            }
+        }
+        h3{
+            color: #000; font-size: 2rem; margin-bottom: 3rem; font-weight: 700; text-transform: uppercase; 
+        }
+        
+    }
+    .content_area{
+        width: 100%; float: left; margin-bottom: 3rem;
+        p{
+            color: #000; font-size: 2.4rem; line-height: 5rem;
+            &.big{
+                &::first-letter{
+                    font-size: 5.4rem;
+                }
+            }
+            
+        }
+        img{
+            width: 100%; display: block; margin: 3rem 0 4rem;
+        }
+        h4{
+            color: #000; font-size: 2rem; margin-bottom: 3rem; font-weight: 700; text-transform: uppercase; 
+        }
+    }
+    
+}
+
+.related_post{
+    width: 100%; float: left; margin-bottom: 4rem;
+    h4{
+        color: #000; font-size: 2rem; margin-bottom: 3rem; font-weight: 700; text-transform: uppercase; 
+    }
+    .main{
+        width: 100%; float: left; margin-top: 4rem;
+    }
+    img{
+        width: 100%; height: 17.8rem; margin-bottom: 3rem; object-fit: cover;
+    }
+}
+
+.comment_area{
+    width: 100%; float: left; margin-bottom: 4rem;
+    h4{
+        color: #000; font-size: 2rem; margin-bottom: 3rem; font-weight: 700; text-transform: uppercase; 
+    }
+    .main{
+        width: 100%; float: left; margin-top: 4rem;
+        .portion{
+            width: 100%; float: left; margin-bottom: 3rem;
+            .input{
+                width: 100%; height: 8.5rem; padding: 0 2rem; outline-style: none; border: #787878 2px solid; color: #545454; font-size: 1.9rem;
+            }            
+        }
+        .submit{
+            width: 100%; height: 8rem; background-color: #291402; display: inline-block; font-size: 3rem; color: #fff; text-decoration: none; outline-style: none; 
+            line-height: 8rem; border-radius: .5rem; text-transform: uppercase; text-align: center; transition: all .5s ease-in; font-weight: 700; border: none; cursor: pointer; outline-style: none; 
+            &:hover{
+                background-color: #7f6657;
+            }
+        }
+    }
+    
+}
+
+.widget_right{
+    width: 100%; float: left; margin-bottom: 7.5rem;
+    h3{
+        font-size: 30px; text-transform: capitalize; padding-bottom: 1rem; position: relative; margin-bottom: 2rem; width: 100%;
+        &::after{
+            width: 13.7rem; height: 2px; position: absolute; bottom: 0; left: 0; background-color: #0088cc; content: "";
+        }
+    }
+    .details{
+        width: 100%; float: left;
+        li{
+            width: 100%; float: left; padding-left: 15.4rem; position: relative; min-height: 11.6rem; padding-top: 2rem; margin-bottom: 3rem;
+            a{
+                color: #777777; font-size: 20px; text-transform: capitalize;
+            }
+            img{
+                width: 14.3rem; height: 100%; position: absolute; top: 0; left: 0;
+            }
+        }
+
+    }
+    &.cat{
+        .details{
+            li{
+                padding-left: 0; min-height: 1px; margin-bottom: 1rem;
+                a{
+                    color: #000;
+                }
+            }
+        }
+        
+    }
+    &.tags{
+        .details{            
+            li{
+                 padding: .5rem 2rem;  background-color: #000; margin-right: 1rem; border-radius: 5px; float: left; width: auto; 
+                a{
+                    color: #fff; font-size: 18px; text-transform: none; float: left;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:500px){
+    .blog_left_details{
+        .avator_part{
+            .widget_area{
+                .widget{
+                    li{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
